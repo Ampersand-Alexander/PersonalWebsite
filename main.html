@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
+    <style>
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+  background-color: black;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  top: 30;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("temp.jpg");
+  min-height: 100%;
+  background-image-opacity:.2;
+}
+
+.bgimg-2 {
+  background-image: url("https://www.zdnet.com/a/img/resize/8974d46cae052b00495ab2989e14523134ca610b/2021/07/19/8a337c80-5ed6-43a1-98fb-b981d420890f/programming-languages-shutterstock-1680857539.jpg?width=770&height=578&fit=crop&auto=webp");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("temp2.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color:transparent;
+  font-size:25px;
+  color: #f7f7f7;
+  padding: 18px;
+  letter-spacing: 10px;
+}
+
+.videoinsert{
+  color: #777;
+  background-color:white;
+  text-align:center;
+  padding:50px 80px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+h2{
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #white;
+  text-align: center;
+}
+
+p{
+  opacity: 80%;
+  letter-spacing: 2px;
+  font: 12px;
+  text-align: center;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="bgimg-1">
+  <video autoplay muted loop id="myVideo">
+  <source src="temp.mp4" type="video/mp4">
+  </video>
+
+  <div class="caption">
+  <span class="border">Alexander Lai Tran</span>
+
+  </div>
+  <div class="videoinsert">
+    <h3 style="text-align:center;">My Mission</h3>
+    <p>Hello, my name is Alex. As an aspiring computer science major, creating quality software in the large and diverse information age that we have stepped our feet in is my goal. Innovation has always been the goal, I’d create anything between simple pencil grips, modifying them if they were not suitable enough, to complex electromagnetic pulse devices, and devices anywhere in between. My mission is to bring that innovation to software in larger projects to make each aspect refined to the user’s preferences.</p>
+  </div>
+
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <h2>I am knowledgeable in:</h2>
+  <p>C++,  PYTHON,  HTML,  CSS,  MYSQL,  PHP,  OBJECT ORIENTED PROGRAMMING,  DATA STRUCTURES,  ALGORITHMS,  SCRUM</p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Contact Me</span>
+    <h2 style="background-color:transparent;font-size:16px;color: #f7f7f7;">alextran@csu.fullerton.edu</h2>
+    <h2 style="background-color:transparent;font-size:16px;color: #f7f7f7;"></h2>
+  </div>
+</div>
+
+</body>
